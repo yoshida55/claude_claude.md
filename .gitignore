@@ -1,0 +1,14 @@
+# ホワイトリスト方式: まず全部無視して、必要なものだけ許可
+*
+
+# 許可するファイル
+!.gitignore
+!CLAUDE.md
+!FLAGS.md
+
+# 許可するフォルダ（commands配下のスキル定義）
+!commands/
+!commands/**
+
+# スキルフォルダは別リポジトリなので除外
+skills/
