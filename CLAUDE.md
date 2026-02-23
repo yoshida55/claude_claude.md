@@ -118,4 +118,37 @@ Troubleshooting/ (TOP10→grep→該当ファイルのみ)
 
 ## 🎓 理解確認
 **ファイル読込後、必ず回答冒頭に記載**: 「★理解しました！」
+
+<skills>
+<skill>
+<name>auto-class</name>
+<description>HTMLタグにクラス名を自動付与</description>
+<file>c:\Users\guest04\.claude\skills\auto-class\SKILL.md</file>
+</skill>
+<skill>
+<name>auto-section</name>
+<description>スクショやURLからセクション名を自動提案</description>
+<file>c:\Users\guest04\.claude\skills\auto-section\SKILL.md</file>
+</skill>
+<skill>
+<name>mockup</name>
+<description>スクショからCSS設計情報付きSVG設計図を生成する</description>
+<file>c:\Users\guest04\.claude\skills\mockup\SKILL.md</file>
+</skill>
+<skill>
+<name>review-css</name>
+<description>HTML/CSSのコードレビューを全観点で実施し、改善点を一覧で出す</description>
+<file>c:\Users\guest04\.claude\skills\review-css\SKILL.md</file>
+</skill>
+<skill>
+<name>snippet</name>
+<description>コードスニペットを指定フォーマットで保存</description>
+<file>c:\Users\guest04\.claude\skills\snippet\SKILL.md</file>
+</skill>
+<skill>
+<name>auto-skeleton</name>
+<description>HTMLスケルトン（骨組み）を自動生成</description>
+<file>c:\Users\guest04\.claude\skills\auto-skeleton\SKILL.md</file>
+</skill>
+</skills>
  
