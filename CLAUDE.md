@@ -91,6 +91,12 @@
 - 回答の末尾に必ず **「### 覚えるべきポイント」** を追加する
 - ※ Python・ツール作成など他の開発作業には適用しない
 
+### 🔧 コード修正モード
+コードを選択した状態で「し」または「s」と送られたら：
+- 選択範囲のコードを修正して、修正箇所と理由を教える
+- 修正はファイルに直接反映する
+- 説明は「修正箇所: ○○ → ○○（理由）」の形式で簡潔に
+
 ### 📖 コード説明モード
 コードを選択した状態で「あ」と送られたら、以下の形式で回答：
 
@@ -229,6 +235,34 @@ Troubleshooting/ (TOP10→grep→該当ファイルのみ)
   5. メモをフォーマットして追記
   6. 行番号報告 + VS Codeハイライト
 
+### 🚨 メモ追記時の注意（GitHub Copilot専用 / 文字化け防止）
+- **手法**: `run_in_terminal` での `Add-Content` 実行は避ける（PowerShellのデフォルトがShift-JISのため）。
+- **推奨**: 文字化けを防ぐため、`create_file` や `replace_string_in_file` などの**ファイル直操作ツール**を使ってUTF-8で保存すること。
+- **背景**: PowerShellを通すとUTF-8のファイルがShift-JISで上書きされ、全体が文字化けするリスクがある。
+
 
 
 g
+
+---
+
+## 📚 WordPress PHP学習 進捗メモ（wp_01.pdf）
+
+**学習ファイル**: `60_PHP_STUDY_WordPress_theme` テーマ
+**最終更新**: 2026-03-15
+
+### ✅ 完了済み（PDF 50〜70ページ相当）
+- WordPressテンプレート階層（index.phpが最後の砦）
+- PHPコロン構文（`if:` / `else:` / `endif;` / `while:` / `endwhile;`）
+- WordPressループ（`have_posts()` / `while` / `the_post()`）
+- 投稿情報取得関数（`the_title` / `the_date` / `the_content` / `the_author` / `the_permalink`）
+- アイキャッチ画像（`has_post_thumbnail()` / `the_post_thumbnail()`）
+- `get_theme_file_uri()` と `get_template_directory_uri()` の違い
+- WordPress関数命名規則（`the_`=表示 / `get_`=取得+echo必要 / `has_`/`is_`=判定 / `add_`=登録）
+- VSCodeグローバルスニペット登録（`ph`・`pif`）
+- single.php に上記関数を実装（練習済み）
+- archive.php のアイキャッチ条件分岐を確認
+
+### ➡ 次にやること
+- archive.php の残りのループ内コード（ページネーション `the_posts_pagination()` など）
+- PDF 70ページ以降へ進む
