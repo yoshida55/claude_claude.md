@@ -265,10 +265,10 @@ g
 
 ## 📚 WordPress PHP学習 進捗メモ（wp_01.pdf）
 
-**学習ファイル**: `60_PHP_STUDY_WordPress_theme` テーマ
-**最終更新**: 2026-03-15
+**学習ファイル**: `80_CODE_JUMP_THEME_grid`（git@github.com:yoshida55/80_CODE_JUMP_THEME_grid.git）
+**最終更新**: 2026-03-20
 
-### ✅ 完了済み（PDF 50〜70ページ相当）
+### ✅ 完了済み
 - WordPressテンプレート階層（index.phpが最後の砦）
 - PHPコロン構文（`if:` / `else:` / `endif;` / `while:` / `endwhile;`）
 - WordPressループ（`have_posts()` / `while` / `the_post()`）
@@ -276,10 +276,21 @@ g
 - アイキャッチ画像（`has_post_thumbnail()` / `the_post_thumbnail()`）
 - `get_theme_file_uri()` と `get_template_directory_uri()` の違い
 - WordPress関数命名規則（`the_`=表示 / `get_`=取得+echo必要 / `has_`/`is_`=判定 / `add_`=登録）
-- VSCodeグローバルスニペット登録（`ph`・`pif`）
-- single.php に上記関数を実装（練習済み）
-- archive.php のアイキャッチ条件分岐を確認
+- esc_ 関数3種（`esc_url` / `esc_html` / `esc_attr`）の使い分け
+- `bloginfo('name')` は内部エスケープ済みなので `esc_html` 不要
+- `get_post_meta()` でカスタムフィールドの値を取得（語呂：郵便局員がpostでmeta君お金をとりにいく）
+- `add_theme_support('post-thumbnails')` でアイキャッチ有効化
+- ページネーション関数を `functions.php` に追加
+- **header.php・footer.php・functions.php・index.php のWordPressテーマ化 完了**
 
 ### ➡ 次にやること
-- archive.php の残りのループ内コード（ページネーション `the_posts_pagination()` など）
-- PDF 70ページ以降へ進む
+- `single.php` の作成（detail.htmlを元にWordPress関数に置き換え）← **作業中**
+- `category.php` の作成
+
+### 📋 学習の進め方（このスタイルを継続する）
+1. **1ファイルずつ** 見本（source/）と自分のファイルを見比べる
+2. **1箇所ずつ** 説明 → ユーザーが自分で修正 → 確認の順で進める
+3. **その場でメモ**（/memo-format）→ バックグラウンド実行で待ち時間なし
+4. **語呂合わせ**はメモ時に必ず確認してから追記
+5. **質問が出たらその場で答える**（コード修正より理解を優先）
+6. ファイル1本終わったら**まとめメモ**を追記する
