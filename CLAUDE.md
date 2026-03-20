@@ -282,10 +282,19 @@ g
 - `add_theme_support('post-thumbnails')` でアイキャッチ有効化
 - ページネーション関数を `functions.php` に追加
 - **header.php・footer.php・functions.php・index.php のWordPressテーマ化 完了**
+- `the_post_thumbnail()` はタグごと出力（語呂：「サム」はいつも「直球」）
+- `echo esc_html( get_post_meta() )` の正しい順番（取得→安全に→出力）
+- `the_` 系は内部でエスケープ済み・`get_` 系は自分で `esc_` が必要
+- `category.php` と `archive.php` の違い（カテゴリーだけ見た目変えたいときだけ category.php を作る）
+- `single_cat_title()` でカテゴリー名を表示
+- `page.php` は固定ページ用テンプレート（会社概要・お問い合わせなど）
+- **single.php・category.php・page.php のWordPressテーマ化 完了**
+- ローカル環境（Local by Flywheel）でサイト表示確認済み
 
 ### ➡ 次にやること
-- `single.php` の作成（detail.htmlを元にWordPress関数に置き換え）← **作業中**
-- `category.php` の作成
+- CSS の仕上げ（`css/style.css` を `source/style.css` と見比べて整える）
+- JavaScript（ハンバーガーメニューを動かす）
+- レスポンシブ対応（スマホ表示）
 
 ### 📋 学習の進め方（このスタイルを継続する）
 1. **1ファイルずつ** 見本（source/）と自分のファイルを見比べる
