@@ -266,7 +266,7 @@ g
 ## 📚 WordPress PHP学習 進捗メモ（wp_01.pdf）
 
 **学習ファイル**: `80_CODE_JUMP_THEME_grid`（git@github.com:yoshida55/80_CODE_JUMP_THEME_grid.git）
-**最終更新**: 2026-03-20
+**最終更新**: 2026-03-21
 
 ### ✅ 完了済み
 - WordPressテンプレート階層（index.phpが最後の砦）
@@ -290,9 +290,12 @@ g
 - `page.php` は固定ページ用テンプレート（会社概要・お問い合わせなど）
 - **single.php・category.php・page.php のWordPressテーマ化 完了**
 - ローカル環境（Local by Flywheel）でサイト表示確認済み
+- `get_posts()` + `foreach` ループで件数制限（語呂：限定商品をゲットする・ハブは買わない）
+- `front-page.php` は作成せず `index.php` をトップページとして使用（source/にも存在しないため）
+- **index.php のWordPressテーマ化 完了・トップ画面（4列グリッド + View More）表示確認済み**
 
 ### ➡ 次にやること
-- CSS の仕上げ（`css/style.css` を `source/style.css` と見比べて整える）
+- CSS の仕上げ（デザインカンプに近づける・余白・フォントなど）
 - JavaScript（ハンバーガーメニューを動かす）
 - レスポンシブ対応（スマホ表示）
 
