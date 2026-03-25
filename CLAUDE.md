@@ -230,6 +230,11 @@ Troubleshooting/ (TOP10→grep→該当ファイルのみ)
 <description>HTMLスケルトン（骨組み）を自動生成</description>
 <file>c:\Users\guest04\.claude\skills\auto-skeleton\SKILL.md</file>
 </skill>
+<skill>
+<name>auto-kanpu-size</name>
+<description>デザインカンプJSONとCSSのフォントサイズ・ウェイトを照合して自動修正</description>
+<file>c:\Users\guest04\.claude\skills\auto-kanpu-size\SKILL.md</file>
+</skill>
 </skills>
  
  
