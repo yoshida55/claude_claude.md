@@ -231,9 +231,9 @@ Troubleshooting/ (TOP10→grep→該当ファイルのみ)
 <file>c:\Users\guest04\.claude\skills\auto-skeleton\SKILL.md</file>
 </skill>
 <skill>
-<name>auto-kanpu-size</name>
-<description>デザインカンプJSONとCSSのフォントサイズ・ウェイトを照合して自動修正</description>
-<file>c:\Users\guest04\.claude\skills\auto-kanpu-size\SKILL.md</file>
+<name>auto-kanpu</name>
+<description>デザインカンプJSON（座標・フォント・色・余白）とCSSを照合して自動修正</description>
+<file>C:\Users\sensh\.claude\skills\auto-kanpu\SKILL.md</file>
 </skill>
 </skills>
  
